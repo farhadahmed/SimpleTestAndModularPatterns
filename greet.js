@@ -3,5 +3,5 @@ exports.hello = function(name) {
 };
 
 exports.goodbye = function(name) {
-  return('Goodbye, ' + name)
+  return('Goodbye, ' + name + '.')
 }
