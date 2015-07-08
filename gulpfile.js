@@ -14,5 +14,5 @@ gulp.task('test', function() {
 });
 
 gulp.task('watch', function() {
-  return gulp.watch(['./**/*.js', '*.js'], ['test', 'jshint']); //gulp.watch will run the test&jshint tasks whenever a file ending in .js is saved in current dir and test subdir.
+  return gulp.watch(['./test/*.js', '*.js'], ['test', 'jshint']); //gulp.watch will run the test&jshint tasks whenever a file ending in .js is saved in current dir and test subdir.
 });
