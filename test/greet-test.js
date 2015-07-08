@@ -9,4 +9,4 @@ describe('greet.js', function() {
   it('will say "Goodbye, Farhad." when passed Farhad', function() {
     expect(greet.goodbye('Farhad')).to.eql('Goodbye, Farhad.');
   });
-})
+});
