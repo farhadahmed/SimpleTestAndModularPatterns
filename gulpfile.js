@@ -1,11 +1,11 @@
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
-var mocha  = require('gulp-mocha'); //we're using gulp-mocha plugin
+var mocha  = require('gulp-mocha'); //using gulp-mocha plugin
 
-gulp.task('jshint', function(){
-  return gulp.src(['./test/*.js', '*.js'])
-              .pipe(jshint())
-              .pipe(jshint.reporter('default'));
+gulp.task('jshint', function(){ //grunt.task(name, fn) --> registers a function with the name jshint
+  return gulp.src(['./test/*.js', '*.js']) //gulp.src points to the files we want to use. *.js will read files ending in .js
+              .pipe(jshint()) //.pipe to chain output into other plugins
+              .pipe(jshint.reporter('default')); //reporter formats and color codes output
 });
 
 gulp.task('test', function() {
